@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, #0b2e26, #1f3d2b, #2f5d3a);
+    color:#f1f5f2;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #1f3d2b;
+    z-index: 1000;
+    color: white;
+}
+
+/* Move nav items to right */
+nav {
+    margin-left: auto;
+}
+
+/* Nav links hover effect */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #25eb4d;
+}
+
+/* underline hover animation */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #eb5d25;
+    left: 0;
+    color: white;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Nav button hover */
+.nav-btn {
+    margin-left: 25px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 25px;
+    background: #2563eb;
+}
+
+.nav-btn a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.nav-btn:hover {
+    transform: translateY(-3px);
+    color: white;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
+
+
+
+
+
+
+/* SECTION */
+.trek-section{
+    padding:80px 100px;
+
+    margin-top: 80px;
+}
+
+.trek-section h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.intro{
+    max-width:700px;
+    margin-bottom:60px;
+    color:#cbd5c8;
+}
+
+/* CARD */
+.trek-card{
+    display: flex;
+    width: 800px;
+    height: 300px;               /* FIXED HEIGHT */
+    gap: 0;                      /* remove gap so image touches content */
+    margin-bottom: 60px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+
+.trek-card:hover{
+    transform:translateY(-8px);
+}
+
+/* IMAGE */
+.trek-card img{
+    width: 40%;                  /* image takes left 40% */
+    height: 100%;
+    object-fit: cover;           /* fills completely */
+    flex-shrink: 0;              /* prevents image from shrinking */
+}
+
+
+/* INFO */
+.trek-info{
+    padding:30px;
+}
+
+.trek-info h2{
+    margin-bottom:15px;
+    font-size:26px;
+}
+
+.trek-info p{
+    margin-bottom:12px;
+    line-height:1.6;
+    color:#d1d9d3;
+}
+
+
+footer{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    margin-top: 2500px;
+}

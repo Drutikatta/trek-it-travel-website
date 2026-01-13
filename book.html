@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | Trek-it</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 50px;
+    background:#1f3d2b;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    z-index:1000;
+}
+
+nav a{
+    margin:0 15px;
+    color:white;
+    text-decoration:none;
+}
+
+/* BOOKING SECTION */
+.booking-section{
+    min-height:100vh;
+    padding:140px 20px;
+    background:linear-gradient(180deg,#1f3d2b,#0b2e26);
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.booking-box{
+    background:rgba(255,255,255,0.1);
+    padding:40px;
+    border-radius:20px;
+    max-width:600px;
+    width:100%;
+    color:white;
+}
+
+.booking-box h1{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.booking-box p{
+    text-align:center;
+    color:#cbd5c8;
+    margin-bottom:30px;
+}
+
+/* FORM */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+input, select, textarea{
+    padding:12px 15px;
+    border:none;
+    border-radius:25px;
+    outline:none;
+    font-size:14px;
+}
+
+textarea{
+    border-radius:15px;
+    resize:none;
+}
+
+/* BUTTONS */
+.book-btn{
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:#a3b736;
+    color:#0b2e26;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.book-btn:hover{
+    background:#65c332;
+}
+
+.cancel-btn{
+    text-align:center;
+    padding:12px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    text-decoration:none;
+}
+
+.cancel-btn:hover{
+    background:rgba(255,255,255,0.35);
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <h2 class="logo">Trek-it</h2>
+        <nav>
+            <a href="./home.html">Home</a>
+            <a href="./desti.html">Destinations</a>
+            <a href="./package.html">Packages</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking-section">
+        <div class="booking-box">
+            <h1>Book Your Trek</h1>
+            <p>Fill in the details to secure your adventure</p>
+
+            <form>
+                <div class="form-row">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="form-row">
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="number" placeholder="Number of Trekkers" min="1" required>
+                </div>
+
+                <div class="form-row">
+                    <select required>
+                        <option value="">Select Trek Package</option>
+                        <option>Raigad Fort Trek</option>
+                        <option>Rajgad Fort Trek</option>
+                        <option>Harishchandragad Trek</option>
+                        <option>Kalsubai Peak Trek</option>
+                        <option>Lohagad Fort Trek</option>
+                        <option>Night Trek Package</option>
+                    </select>
+
+                    <select required>
+                        <option value="">Experience Level</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <input type="date" required>
+                    <input type="date" required>
+                </div>
+
+                <textarea rows="4" placeholder="Any special requirements (optional)"></textarea>
+
+                <button type="submit" class="book-btn">Confirm Booking</button>
+                <a href="./home.html" class="cancel-btn">Cancel</a>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

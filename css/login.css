@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+}
+
+/* BLUR BACKGROUND IMAGE */
+.bg-image{
+    position:fixed;
+    inset:0;
+    background:url("../assets/trek.jpeg") center/cover no-repeat;
+    filter:blur(8px);
+    transform:scale(1.1);
+    z-index:-1;
+}
+
+/* LOGIN CONTAINER */
+.login-container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:360px;
+    padding:40px 35px;
+    background:rgba(15,40,30,0.75);
+    backdrop-filter:blur(6px);
+    border-radius:20px;
+    color:white;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+.login-container h2{
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.login-container p{
+    font-size:14px;
+    color:#cbd5c8;
+    margin-bottom:25px;
+}
+
+/* INPUTS */
+.login-container input{
+    width:100%;
+    padding:12px 15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:12px;
+    background:rgba(255,255,255,0.15);
+    color:white;
+    outline:none;
+}
+
+.login-container input::placeholder{
+    color:#d1d5db;
+}
+
+/* BUTTON */
+.login-container button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#a3b736;
+    color:#0b2e26;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.login-container button:hover{
+    background:#65c332;
+}
+
+/* FOOT NOTE */
+.note{
+    display:block;
+    margin-top:18px;
+    font-size:13px;
+    color:#cbd5c8;
+}
+
+.login-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#a3b736;
+    color:#0b2e26;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.login-btn:hover{
+    background:#65c332;
+}
+
+/* CANCEL BUTTON */
+.cancel-btn{
+    display:block;
+    margin-top:12px;
+    padding:11px;
+    border-radius:25px;
+    text-decoration:none;
+    background:rgba(255,255,255,0.18);
+    color:white;
+    font-size:15px;
+    transition:background 0.3s;
+}
+
+.cancel-btn:hover{
+    background:rgba(255,255,255,0.3);
+}
