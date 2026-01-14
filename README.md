@@ -30,7 +30,7 @@ Trek-it is a simple and visually appealing trekking and travel website built usi
    git clone https://github.com/your-username/trek-it.git
    ```
 2. Open the project folder
-3. Run `home.html` in any modern web browser
+3. Run `index.html` in any modern web browser
 
 ---
 
