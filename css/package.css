@@ -6,11 +6,11 @@
 }
 
 body {
-    background: linear-gradient(180deg, #0b2e26, #1f3d2b, #2f5d3a);
+    background-image: linear-gradient(180deg, #0b2e26, #1f3d2b, #2f5d3a);
     color: #eef5f0;
 }
 
-/* NAVBAR */
+/* NAVBAR */    
 .navbar {
     display: flex;
     position: fixed;
